@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <string-array name="document_types">
+        <item>Brgy Certificate</item>
+        <item>Brgy.ID</item>
+        <item>Cedula</item>
+        <item>Business Permit</item>
+        <item>Brgy Indigency</item>
+        <item>Clearance</item>
+    </string-array>
+</resources>
+

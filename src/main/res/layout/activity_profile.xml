@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myprimary"
+    tools:context=".profile">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/roundbotnav"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/bottom_navigation_colors"
+        app:itemTextColor="@color/bottom_navigation_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="-50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/userprof"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Name"
+        android:layout_marginBottom="250dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <TextView
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Email"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="230dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/agetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Age"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/dobtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Date of Birth"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/addresstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/mobiletxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signoutz"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Sign Out"
+                android:clickable="true"
+                android:backgroundTint="@color/mysecondary"
+                app:cornerRadius="32dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="100dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteacc"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-100dp"
+                android:backgroundTint="#ED0A24"
+                android:clickable="true"
+                android:text="Delete Account"
+                app:cornerRadius="32dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/changepass"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Change Password"
+                android:clickable="true"
+                android:backgroundTint="#097969"
+                app:cornerRadius="32dp"
+                android:layout_marginTop="-100dp"
+                android:layout_marginLeft="100dp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="240dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="My Profile"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

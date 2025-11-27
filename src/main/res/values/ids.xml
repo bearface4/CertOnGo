@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnChooseDate" type="id" />
+    <item name="tilDateTime" type="id" />
+    <item name="imageView7" type="id" />
+    <item name="textView2" type="id" />
+    <item name="labelName" type="id" />
+    <item name="tilName" type="id" />
+    <item name="etName" type="id" />
+    <item name="labelDocumentType" type="id" />
+    <item name="spinnerDocumentType" type="id" />
+    <item name="labelPurpose" type="id" />
+    <item name="tilPurpose" type="id" />
+    <item name="etPurpose" type="id" />
+    <item name="labelDateTime" type="id" />
+    <item name="submit" type="id" />
+    <item name="doc_type" type="id" />
+    <item name="doc_purpose" type="id" />
+    <item name="doc_date" type="id" />
+</resources>
